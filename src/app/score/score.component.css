@@ -9,8 +9,8 @@ app-player{
 }
 
 app-player:first-child{
-  background: lightblue;
+  background: #a4d5e5;
 }
 app-player:nth-child(2){
-  background: lightcoral;
+  background: #f17575;
 }
