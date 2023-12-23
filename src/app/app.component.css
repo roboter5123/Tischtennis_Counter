@@ -11,10 +11,10 @@ app-player{
 
 app-score{
   position: fixed;
-  left: 33.5%;
-  top: 33.5%;
-  height: 33%;
-  width: 33%;
+  left: 27.5%;
+  top: 27.5%;
+  height: 45%;
+  width: 45%;
   border: white solid 1px;
   z-index: 1000;
 }
