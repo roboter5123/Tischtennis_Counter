@@ -12,5 +12,23 @@ import {PlayerComponent} from "./player/player.component";
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Tischtennis';
+  score = {player1: 0, player2 : 0}
+  currentGame = {player1: 0, player2: 0}
+
+  scorePoint(player: number) {
+    if (player == 1){
+      this.score.player1 += 1;
+    }else if (player == 2){
+      this.score.player2 += 1;
+    }
+    this.currentGame = {player1: 0, player2: 0}
+  }
+
+  scoreCurrentGame(player: number) {
+    if (player == 1){
+      this.currentGame.player1 += 1;
+    }else if (player == 2){
+      this.currentGame.player2 += 1;
+    }
+  }
 }

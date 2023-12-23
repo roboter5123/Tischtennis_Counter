@@ -1,5 +1,5 @@
 <main class="main">
-  <app-score></app-score>
-  <app-player></app-player>
-  <app-player></app-player>
+  <app-score [score]="score" (scorePoint)="scorePoint($event)"></app-score>
+  <app-player id="player1" [points]="currentGame.player1" (scorePoint)="scoreCurrentGame(1)"></app-player>
+  <app-player id="player2" [points]="currentGame.player2" (scorePoint)="scoreCurrentGame(2)"></app-player>
 </main>

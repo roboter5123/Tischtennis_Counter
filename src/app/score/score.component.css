@@ -1,0 +1,16 @@
+.box{
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+app-player{
+  width: 50%;
+}
+
+app-player:first-child{
+  background: lightblue;
+}
+app-player:nth-child(2){
+  background: lightcoral;
+}

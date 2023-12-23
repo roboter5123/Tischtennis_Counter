@@ -1,1 +1,4 @@
-<p>score works!</p>
+<div class="box">
+  <app-player [points]="score.player1" (scorePoint)="scorePlayer(1)"></app-player>
+  <app-player [points]="score.player2" (scorePoint)="scorePlayer(2)"></app-player>
+</div>

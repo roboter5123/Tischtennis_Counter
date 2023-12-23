@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 
 @Component({
   selector: 'app-player',
@@ -9,4 +9,17 @@ import { Component } from '@angular/core';
 })
 export class PlayerComponent {
 
+  @Input()
+  points: number;
+
+  @Output()
+  scorePoint = new EventEmitter;
+
+  constructor() {
+    this.points = 0;
+  }
+
+  addPoints() {
+    this.scorePoint.emit();
+  }
 }
